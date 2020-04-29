@@ -15,6 +15,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using System.IO;
+using AutoMapper;
+using BookStore.Mappings;
 
 namespace BookStore
 {
@@ -42,6 +44,9 @@ namespace BookStore
                     .AllowAnyMethod()
                     .AllowAnyHeader());
             });
+
+            services.AddAutoMapper(typeof(Maps));
+
 
             services.AddSwaggerGen(c =>
             {
