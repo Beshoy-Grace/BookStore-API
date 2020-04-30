@@ -17,6 +17,13 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:BookStore.Controllers.BooksController.Create(BookStore.DTOs.BookCreateDTO)">
+            <summary>
+            Creates a new book
+            </summary>
+            <param name="bookDTO"></param>
+            <returns>Book Object</returns>
+        </member>
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>
             THis is a test API controller
