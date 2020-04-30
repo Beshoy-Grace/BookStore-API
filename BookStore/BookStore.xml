@@ -4,6 +4,19 @@
         <name>BookStore</name>
     </assembly>
     <members>
+        <member name="M:BookStore.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            Get All Authors
+            </summary>
+            <returns>List Of Authors</returns>
+        </member>
+        <member name="M:BookStore.Controllers.AuthorsController.Delete(System.Int32)">
+            <summary>
+            Removes an author by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:BookStore_API.Controllers.HomeController">
             <summary>
             THis is a test API controller

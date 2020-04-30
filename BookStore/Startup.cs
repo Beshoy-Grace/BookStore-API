@@ -17,6 +17,8 @@ using System.Reflection;
 using System.IO;
 using AutoMapper;
 using BookStore.Mappings;
+using BookStore.Services;
+using BookStore.Contracts;
 
 namespace BookStore
 {
@@ -61,6 +63,8 @@ namespace BookStore
                 var xpath = Path.Combine(AppContext.BaseDirectory, xfile);
                 c.IncludeXmlComments(xpath);
             });
+
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
                 services.AddControllers();
         }
 
